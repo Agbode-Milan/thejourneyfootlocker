@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Primary Meta Tags -->
+  <title>The Journey Footlocker | Premium Sneaker Gallery</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="author" content="The Journey Footlocker">
+  <meta name="keywords" content="sneakers, footwear, premium sneakers, sneaker gallery, jordan, nike, adidas, yeezy, limited edition">
+  <meta name="description" content="Discover the ultimate sneaker gallery at The Journey Footlocker. Explore premium, limited edition, and exclusive sneakers from top brands like Jordan, Nike, Adidas, and more.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thejourneyfootocker.com/">
+  <meta property="og:title" content="The Journey Footlocker | Premium Sneaker Gallery">
+  <meta property="og:description" content="Discover the ultimate sneaker gallery featuring premium and limited edition sneakers from top brands.">
+  <meta property="og:image" content="https://thejourneyfootocker.com/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thejourneyfootocker.com/">
+  <meta property="twitter:title" content="The Journey Footlocker | Premium Sneaker Gallery">
+  <meta property="twitter:description" content="Discover the ultimate sneaker gallery featuring premium and limited edition sneakers from top brands.">
+  <meta property="twitter:image" content="https://thejourneyfootocker.com/images/twitter-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Font Awesome for flexible, customizable icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700;800;900&display=swap" as="style">
+  
+  <!-- Refined Premium Sneaker Gallery Styles -->
+  <style>
+    :root {
+      /* Refined Black Foundation */
+      --primary-black: #0a0a0a;
+      --deep-black: #000000;
+      --charcoal: #1a1a1a;
+      --dark-gray: #2a2a2a;
+      
+      /* Subtle Premium Colors */
+      --text-primary: #f5f5f5;
+      --text-secondary: #d0d0d0;
+      --text-muted: #a0a0a0;
+      
+      /* Refined Accent Colors - More Subtle */
+      --accent-gold: #c9a96e;      /* Muted gold */
+      --accent-warm: #b8a082;      /* Warm beige */
+      --accent-cool: #8a9ba8;      /* Cool blue-gray */
+      
+      /* Subtle Gradients */
+      --gradient-subtle: linear-gradient(135deg, rgba(201, 169, 110, 0.1) 0%, rgba(138, 155, 168, 0.05) 100%);
+      --gradient-accent: linear-gradient(135deg, #c9a96e 0%, #d4af37 100%);
+      
+      /* Typography */
+      --font-primary: 'Inter', sans-serif;
+      --font-display: 'Orbitron', monospace;
+      
+      /* Refined Shadows & Effects */
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.3);
+      --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
+      --shadow-accent: 0 4px 15px rgba(201, 169, 110, 0.15);
+      
+      /* Borders */
+      --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+      --border-accent: 1px solid rgba(201, 169, 110, 0.2);
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background: var(--primary-black);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    /* Refined Navigation */
+    .modern-navbar {
+      background: rgba(10, 10, 10, 0.95) !important;
+      backdrop-filter: blur(15px);
+      border-bottom: var(--border-subtle);
+      box-shadow: var(--shadow-subtle);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand-modern {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .navbar-brand-modern:hover {
+      color: var(--accent-gold);
+      filter: brightness(1.1);
+    }
+
+    .nav-link {
+      color: var(--text-secondary) !important;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      position: relative;
+      font-size: 0.9rem;
+    }
+
+    .nav-link:hover {
+      color: var(--accent-gold) !important;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent-gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions i {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      margin: 0 0.3rem;
+    }
+
+    .nav-actions i:hover {
+      color: var(--accent-gold);
+      transform: scale(1.05);
+    }
+
+    .nav-actions a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-actions a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* Refined Hero Section */
+    .hero-section {
+      background: linear-gradient(45deg, var(--deep-black) 0%, var(--charcoal) 100%);
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--gradient-subtle);
+      pointer-events: none;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      line-height: 0.9;
+      position: relative;
+    }
+
+    .hero-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--gradient-accent);
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-weight: 300;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin-top: 1.5rem;
+    }
+
+    .discover-btn {
+      background: var(--gradient-accent);
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 25px;
+      color: var(--deep-black);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    .discover-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-accent);
+      color: var(--deep-black);
+    }
+
+    /* Refined Features Section */
+    .features-modern {
+      background: var(--primary-black);
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-radius: 15px;
+      background: rgba(26, 26, 26, 0.6);
+      backdrop-filter: blur(10px);
+      border: var(--border-subtle);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(201, 169, 110, 0.3);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      color: var(--accent-gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .feature-description {
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* Refined Search Popup */
+    .search-popup {
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(20px);
+      border: var(--border-accent);
+      border-radius: 15px;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .search-input {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid rgba(201, 169, 110, 0.3);
+      color: var(--text-primary);
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      font-weight: 300;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-bottom-color: var(--accent-gold);
+      box-shadow: 0 2px 10px rgba(201, 169, 110, 0.1);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .cat-list-title {
+      color: var(--accent-gold) !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .cat-list-item a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 0.6rem 0;
+      display: block;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .cat-list-item a:hover {
+      color: var(--accent-gold);
+      padding-left: 0.5rem;
+    }
+
+    /* Refined Cart Offcanvas */
+    .offcanvas {
+      background: var(--charcoal);
+      color: var(--text-primary);
+      border-left: var(--border-accent);
+    }
+
+    .offcanvas-header {
+      border-bottom: var(--border-subtle);
+      padding: 2rem;
+    }
+
+    .offcanvas-title {
+      color: var(--accent-gold) !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .btn-close {
+      filter: invert(1) brightness(0.8);
+      transition: filter 0.3s ease;
+    }
+
+    .btn-close:hover {
+      filter: invert(1) brightness(1.2);
+    }
+
+    /* Refined Cart Items */
+    .list-group-item {
+      background: rgba(26, 26, 26, 0.7);
+      border: var(--border-subtle);
+      color: var(--text-primary);
+      margin-bottom: 0.8rem;
+      border-radius: 10px;
+      padding: 1.2rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      border-color: rgba(201, 169, 110, 0.2);
+    }
+
+    .btn-primary {
+      background: var(--gradient-accent);
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.75rem 2rem;
+      color: var(--deep-black);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-accent);
+    }
+
+    .btn-outline-light {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      border-radius: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.75rem 2rem;
+    }
+
+    .btn-outline-light:hover {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: var(--deep-black);
+    }
+
+    /* Dropdown Menu Refinements */
+    .dropdown-menu {
+      background: var(--charcoal) !important;
+      border: var(--border-accent) !important;
+      border-radius: 10px;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .dropdown-item {
+      color: var(--text-secondary) !important;
+      font-weight: 400;
+      padding: 0.6rem 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-item:hover {
+      background: rgba(201, 169, 110, 0.1) !important;
+      color: var(--accent-gold) !important;
+    }
+
+    /* Category Section Refinements */
+    .categories {
+      background: var(--primary-black);
+      padding: 4rem 0;
+    }
+
+    .cat-item {
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin-bottom: 2rem;
+    }
+
+    .cat-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-zoom-effect img {
+      transition: transform 0.4s ease;
+    }
+
+    .image-zoom-effect:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      padding: 2rem;
+    }
+
+    .btn-common {
+      background: rgba(201, 169, 110, 0.9);
+      border: none;
+      color: var(--deep-black);
+      font-weight: 600;
+      padding: 0.6rem 1.5rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-common:hover {
+      background: var(--accent-gold);
+      transform: translateY(-2px);
+      color: var(--deep-black);
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+      .navbar-brand-modern {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+      }
+      
+      .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+      
+      .feature-card {
+        margin-bottom: 2rem;
+        padding: 2rem 1.5rem;
+      }
+
+      .nav-actions {
+        gap: 0.5rem;
+      }
+    }
+
+    /* Refined Animations */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in-up.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--primary-black);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent-gold);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(201, 169, 110, 0.8);
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Demo Content -->
+  <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-modern" href="#">The Journey</a>
+      <div class="nav-actions d-flex align-items-center">
+        <i class="fas fa-search me-3"></i>
+        <i class="fas fa-heart me-3"></i>
+        <i class="fas fa-shopping-bag"></i>
+      </div>
+    </div>
+  </nav>  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="hero-title mb-4">Premium Sneaker Gallery</h1>
+          <p class="hero-subtitle">Discover the finest collection of limited edition and exclusive footwear</p>
+          <a href="#" class="discover-btn mt-4">Explore Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="features-modern">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3 class="feature-title">Premium Quality</h3>
+            <p class="feature-description">Handcrafted excellence in every pair, sourced from the finest materials and authenticated for guaranteed quality.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3 class="feature-title">Express Delivery</h3>
+            <p class="feature-description">White-glove delivery service ensuring your premium sneakers arrive in pristine condition within 24 hours.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="feature-title">Authenticity Guaranteed</h3>
+            <p class="feature-description">Every sneaker is verified by our expert authentication team, ensuring you receive only genuine premium footwear.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+  <!-- Demo Animation Script -->
+  <script>
+    // Add smooth animations on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all feature cards
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.classList.add('fade-in-up');
+      observer.observe(card);
+    });
+
+    // Add shimmer effect to brand name periodically
+    setInterval(() => {
+      const brand = document.querySelector('.navbar-brand-modern');
+      brand.classList.add('shimmer');
+      setTimeout(() => brand.classList.remove('shimmer'), 2000);
+    }, 10000);
+  </script>
+</body>
+
+<body class="sneaker-gallery">
+
+  <!-- Refined Search Popup -->
+  <div class="search-popup position-fixed w-100 h-100 d-none align-items-center justify-content-center" 
+       style="background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); z-index: 9998; top: 0; left: 0;">
+    <div class="search-popup-container container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="p-4 p-md-5 rounded-3" style="background: rgba(26, 26, 26, 0.9); border: var(--border-accent);">
+            
+            <!-- Close Button -->
+            <button type="button" class="btn-close float-end mb-3" aria-label="Close search"></button>
+            
+            <!-- Search Form -->
+            <form role="search" method="get" class="mb-4" action="">
+              <div class="position-relative">
+                <input type="search" id="search-form" class="form-control search-input border-0 fs-5 py-3"
+                  placeholder="Search premium sneakers..." value="" name="s" />
+                <button type="submit" class="search-submit position-absolute border-0 bg-transparent"
+                  style="top: 50%; right: 15px; transform: translateY(-50%);">
+                  <i class="fas fa-search" style="color: var(--accent-gold);"></i>
+                </button>
+              </div>
+            </form>
+
+            <!-- Categories -->
+            <div>
+              <h6 class="cat-list-title mb-3 text-uppercase fw-semibold" 
+                  style="color: var(--accent-gold); letter-spacing: 1px;">Browse Categories</h6>
+              
+              <div class="row g-2">
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Jordan">Air Jordan</a>
+                </div>
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Nike">Nike</a>
+                </div>
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Adidas">Adidas</a>
+                </div>
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Yeezy">Yeezy</a>
+                </div>
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Limited Edition">Limited Edition</a>
+                </div>
+                <div class="col-6 col-md-4">
+                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
+                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
+                     title="Lifestyle">Lifestyle</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Refined Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" 
+       aria-labelledby="CartTitle" style="width: 350px;">
+    <div class="offcanvas-header border-bottom" style="border-color: var(--border-subtle) !important;">
+      <h5 class="offcanvas-title text-uppercase fw-semibold d-flex align-items-center" id="CartTitle">
+        <i class="fas fa-shopping-bag me-2" style="color: var(--accent-gold);"></i>
+        <span style="color: var(--text-primary);">Your Selection</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    
+    <div class="offcanvas-body p-3">
+      <!-- Cart Header -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <span class="fw-medium" style="color: var(--text-primary);">Items</span>
+        <span class="badge rounded-pill" style="background: var(--accent-gold); color: var(--deep-black);">3</span>
+      </div>
+      
+      <!-- Cart Items -->
+      <div class="cart-items mb-4">
+        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
+          <div class="flex-grow-1">
+            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Air Jordan 1 Retro High</h6>
+            <small class="text-muted">Size 10.5 • Chicago Colorway</small>
+          </div>
+          <div class="text-end ms-3">
+            <div class="fw-medium" style="color: var(--accent-gold);">$170</div>
+            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
+          <div class="flex-grow-1">
+            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Nike Dunk Low</h6>
+            <small class="text-muted">Size 9 • Panda Colorway</small>
+          </div>
+          <div class="text-end ms-3">
+            <div class="fw-medium" style="color: var(--accent-gold);">$110</div>
+            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
+          <div class="flex-grow-1">
+            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Adidas Yeezy 350 V2</h6>
+            <small class="text-muted">Size 11 • Zebra</small>
+          </div>
+          <div class="text-end ms-3">
+            <div class="fw-medium" style="color: var(--accent-gold);">$220</div>
+            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cart Total -->
+      <div class="border-top pt-3 mb-4" style="border-color: var(--border-subtle) !important;">
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-semibold fs-5" style="color: var(--text-primary);">Total</span>
+          <span class="fw-bold fs-4" style="color: var(--accent-gold);">$500</span>
+        </div>
+      </div>
+      
+      <!-- Action Buttons -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary btn-lg fw-semibold text-uppercase" style="letter-spacing: 1px;">
+          <i class="fas fa-credit-card me-2"></i>Secure Checkout
+        </button>
+        <button class="btn btn-outline-light fw-medium text-uppercase" style="letter-spacing: 1px;">
+          <i class="fas fa-shopping-cart me-2"></i>View Full Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Premium Navigation - Mobile First -->
+  <nav class="navbar navbar-expand-lg fixed-top modern-navbar py-2 py-lg-3">
+    <div class="container-fluid px-3 px-lg-4">
+      
+      <!-- Mobile Layout -->
+      <div class="d-flex d-lg-none w-100 justify-content-between align-items-center">
+        <!-- Mobile Brand -->
+        <a class="navbar-brand navbar-brand-modern fs-6" href="index.html">
+          TJF
+        </a>
+        
+        <!-- Mobile Actions -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-decoration-none search-toggle">
+            <i class="fas fa-search fs-5" style="color: var(--text-secondary);"></i>
+          </a>
+          <a href="#" class="text-decoration-none position-relative">
+            <i class="fas fa-heart fs-5" style="color: var(--text-secondary);"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
+                  style="font-size: 0.6rem;">2</span>
+          </a>
+          <a href="#" class="text-decoration-none position-relative" data-bs-toggle="offcanvas" 
+             data-bs-target="#offcanvasCart">
+            <i class="fas fa-shopping-bag fs-5" style="color: var(--text-secondary);"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" 
+                  style="background: var(--accent-gold); color: var(--deep-black); font-size: 0.6rem;">3</span>
+          </a>
+          <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" 
+                  data-bs-target="#offcanvasNavbar">
+            <i class="fas fa-bars fs-4" style="color: var(--text-primary);"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Desktop Layout -->
+      <div class="d-none d-lg-flex w-100 justify-content-between align-items-center">
+        
+        <!-- Desktop Brand -->
+        <a class="navbar-brand navbar-brand-modern" href="index.html">
+          TheJourneyFootlocker
+        </a>
+        
+        <!-- Desktop Navigation Links -->
+        <div class="navbar-nav d-flex flex-row gap-4">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" id="galleryDropdown" 
+               data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li><a class="dropdown-item py-2" href="#">Featured Drops</a></li>
+              <li><a class="dropdown-item py-2" href="#">New Arrivals</a></li>
+              <li><a class="dropdown-item py-2" href="#">Limited Edition</a></li>
+              <li><a class="dropdown-item py-2" href="#">Rare Finds</a></li>
+            </ul>
+          </div>
+          
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" id="brandsDropdown" 
+               data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li><a class="dropdown-item py-2" href="#">Nike</a></li>
+              <li><a class="dropdown-item py-2" href="#">Air Jordan</a></li>
+              <li><a class="dropdown-item py-2" href="#">Adidas</a></li>
+              <li><a class="dropdown-item py-2" href="#">Yeezy</a></li>
+              <li><a class="dropdown-item py-2" href="#">New Balance</a></li>
+              <li><a class="dropdown-item py-2" href="#">Converse</a></li>
+            </ul>
+          </div>
+          
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-medium" href="#" id="categoriesDropdown" 
+               data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu dropdown-menu-end mt-2">
+              <li><a class="dropdown-item py-2" href="#">Basketball</a></li>
+              <li><a class="dropdown-item py-2" href="#">Lifestyle</a></li>
+              <li><a class="dropdown-item py-2" href="#">Running</a></li>
+              <li><a class="dropdown-item py-2" href="#">Skateboarding</a></li>
+              <li><a class="dropdown-item py-2" href="#">Retro Classics</a></li>
+            </ul>
+          </div>
+          
+          <a class="nav-link fw-medium" href="#">Collections</a>
+          <a class="nav-link fw-medium" href="#">Contact</a>
+        </div>
+        
+        <!-- Desktop Actions -->
+        <div class="d-flex align-items-center gap-4">
+          <a href="#" class="text-decoration-none d-flex align-items-center search-toggle">
+            <i class="fas fa-search me-2 fs-5" style="color: var(--text-secondary);"></i>
+            <span class="text-uppercase fw-medium" style="color: var(--text-secondary); font-size: 0.85rem;">Search</span>
+          </a>
+          
+          <a href="#" class="text-decoration-none d-flex align-items-center position-relative">
+            <i class="fas fa-heart me-2 fs-5" style="color: var(--text-secondary);"></i>
+            <span class="text-uppercase fw-medium" style="color: var(--text-secondary); font-size: 0.85rem;">
+              Wishlist
+              <span class="ms-1" style="color: var(--accent-gold);">(2)</span>
+            </span>
+          </a>
+          
+          <a href="#" class="text-decoration-none d-flex align-items-center" data-bs-toggle="offcanvas" 
+             data-bs-target="#offcanvasCart">
+            <i class="fas fa-shopping-bag me-2 fs-5" style="color: var(--text-secondary);"></i>
+            <span class="text-uppercase fw-medium" style="color: var(--text-secondary); font-size: 0.85rem;">
+              Cart
+              <span class="ms-1" style="color: var(--accent-gold); font-weight: 600;">(3)</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Navigation -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" 
+       aria-labelledby="offcanvasNavbarLabel" style="width: 300px;">
+    <div class="offcanvas-header border-bottom" style="border-color: var(--border-subtle) !important;">
+      <h5 class="offcanvas-title text-uppercase fw-semibold d-flex align-items-center" id="offcanvasNavbarLabel">
+        <i class="fas fa-bars me-2" style="color: var(--accent-gold);"></i>
+        <span style="color: var(--text-primary);">Menu</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body p-0">
+      <div class="mobile-nav">
+        
+        <!-- Gallery Section -->
+        <div class="nav-section border-bottom" style="border-color: var(--border-subtle) !important;">
+          <button class="nav-section-header w-100 d-flex justify-content-between align-items-center p-3 bg-transparent border-0" 
+                  data-bs-toggle="collapse" data-bs-target="#galleryCollapse">
+            <span class="fw-medium text-uppercase" style="color: var(--text-primary); letter-spacing: 1px;">Gallery</span>
+            <i class="fas fa-chevron-down transition-transform" style="color: var(--text-muted);"></i>
+          </button>
+          <div class="collapse" id="galleryCollapse">
+            <div class="nav-section-content p-3 pt-0">
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Featured Drops</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">New Arrivals</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Limited Edition</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Rare Finds</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Brands Section -->
+        <div class="nav-section border-bottom" style="border-color: var(--border-subtle) !important;">
+          <button class="nav-section-header w-100 d-flex justify-content-between align-items-center p-3 bg-transparent border-0" 
+                  data-bs-toggle="collapse" data-bs-target="#brandsCollapse">
+            <span class="fw-medium text-uppercase" style="color: var(--text-primary); letter-spacing: 1px;">Brands</span>
+            <i class="fas fa-chevron-down" style="color: var(--text-muted);"></i>
+          </button>
+          <div class="collapse" id="brandsCollapse">
+            <div class="nav-section-content p-3 pt-0">
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Nike</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Air Jordan</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Adidas</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Yeezy</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">New Balance</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Converse</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Categories Section -->
+        <div class="nav-section border-bottom" style="border-color: var(--border-subtle) !important;">
+          <button class="nav-section-header w-100 d-flex justify-content-between align-items-center p-3 bg-transparent border-0" 
+                  data-bs-toggle="collapse" data-bs-target="#categoriesCollapse">
+            <span class="fw-medium text-uppercase" style="color: var(--text-primary); letter-spacing: 1px;">Categories</span>
+            <i class="fas fa-chevron-down" style="color: var(--text-muted);"></i>
+          </button>
+          <div class="collapse" id="categoriesCollapse">
+            <div class="nav-section-content p-3 pt-0">
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Basketball</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Lifestyle</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Running</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Skateboarding</a>
+              <a href="#" class="d-block py-2 text-decoration-none nav-sublink">Retro Classics</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Direct Links -->
+        <div class="nav-section">
+          <a href="#" class="d-block p-3 text-decoration-none border-bottom" 
+             style="color: var(--text-primary); border-color: var(--border-subtle) !important;">
+            <span class="fw-medium text-uppercase" style="letter-spacing: 1px;">Collections</span>
+          </a>
+          <a href="#" class="d-block p-3 text-decoration-none border-bottom" 
+             style="color: var(--text-primary); border-color: var(--border-subtle) !important;">
+            <span class="fw-medium text-uppercase" style="letter-spacing: 1px;">Contact</span>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Styles for Mobile Nav -->
+  <style>
+    .nav-sublink {
+      color: var(--text-muted) !important;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      padding-left: 1rem !important;
+    }
+
+    .nav-sublink:hover {
+      color: var(--accent-gold) !important;
+      padding-left: 1.5rem !important;
+    }
+
+    .nav-section-header:hover {
+      background: rgba(201, 169, 110, 0.05) !important;
+    }
+
+    .nav-section-header[aria-expanded="true"] i {
+      transform: rotate(180deg);
+    }
+
+    .search-toggle:hover i,
+    .search-toggle:hover span {
+      color: var(--accent-gold) !important;
+    }
+
+    /* Enhanced mobile responsiveness */
+    @media (max-width: 576px) {
+      .offcanvas {
+        width: 85vw !important;
+      }
+      
+      .search-popup-container .col-12 {
+        padding: 1rem;
+      }
+    }
+  </style>
+
+    <style>
+        :root {
+            --primary-black: #0a0a0a;
+            --charcoal: #1a1a1a;
+            --deep-black: #000000;
+            --text-primary: #ffffff;
+            --text-muted: #b8b8b8;
+            --accent-gold: #d4af37;
+            --accent-warm: #e8b547;
+            --accent-cool: #8a9ba8;
+            --gradient-accent: linear-gradient(135deg, #d4af37 0%, #c9a96e 100%);
+            --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+            --shadow-medium: 0 15px 35px rgba(0, 0, 0, 0.3);
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--primary-black);
+            color: var(--text-primary);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+        }
+
+        .section-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-accent);
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sneaker-card {
+            background: var(--charcoal);
+            border: var(--border-subtle);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            height: 400px;
+        }
+
+        .sneaker-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .sneaker-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+
+        .sneaker-card:hover .sneaker-image {
+            transform: scale(1.05);
+        }
+
+        .sneaker-info {
+            padding: 1.5rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+        }
+
+        .sneaker-brand {
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .sneaker-name {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .sneaker-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-warm);
+        }
+
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 2px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gradient-accent);
+            color: var(--deep-black);
+            transform: translateY(-2px);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .categories {
+            background: var(--primary-black);
+            margin-top: 80px;
+            padding: 5rem 0;
+        }
+
+        /* Animation for gallery items */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .gallery-item:nth-child(2) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(6) { animation-delay: 0.5s; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .filter-btn {
+                font-size: 0.9rem;
+                padding: 0.4rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Sneaker Gallery -->
+    <section class="categories">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Premium Sneaker Gallery</h2>
+                <div class="section-divider mx-auto mb-4"></div>
+                <p class="section-subtitle">
+                    Discover our exclusive collection of premium sneakers from the world's most coveted brands
+                </p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="jordan">Jordan</button>
+                <button class="filter-btn" data-filter="nike">Nike</button>
+                <button class="filter-btn" data-filter="adidas">Adidas</button>
+                <button class="filter-btn" data-filter="limited">Limited Edition</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                
+                <!-- Air Jordan 1 -->
+                <div class="gallery-item sneaker-card" data-category="jordan">
+                    <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Air Jordan 1 Retro High" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Air Jordan</div>
+                        <div class="sneaker-name">Air Jordan 1 Retro High</div>
+                        <div class="sneaker-price">$170</div>
+                    </div>
+                </div>
+
+                <!-- Nike Air Force 1 -->
+                <div class="gallery-item sneaker-card" data-category="nike">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Nike Air Force 1" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Nike</div>
+                        <div class="sneaker-name">Air Force 1 '07</div>
+                        <div class="sneaker-price">$90</div>
+                    </div>
+                </div>
+
+                <!-- Adidas Ultraboost -->
+                <div class="gallery-item sneaker-card" data-category="adidas">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Adidas Ultraboost" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Adidas</div>
+                        <div class="sneaker-name">Ultraboost 22</div>
+                        <div class="sneaker-price">$180</div>
+                    </div>
+                </div>
+
+                <!-- Jordan 4 -->
+                <div class="gallery-item sneaker-card" data-category="jordan limited">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Air Jordan 4" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Air Jordan</div>
+                        <div class="sneaker-name">Air Jordan 4 Retro</div>
+                        <div class="sneaker-price">$200</div>
+                    </div>
+                </div>
+
+                <!-- Nike Dunk Low -->
+                <div class="gallery-item sneaker-card" data-category="nike">
+                    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Nike Dunk Low" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Nike</div>
+                        <div class="sneaker-name">Dunk Low Retro</div>
+                        <div class="sneaker-price">$100</div>
+                    </div>
+                </div>
+
+                <!-- Yeezy Boost -->
+                <div class="gallery-item sneaker-card" data-category="adidas limited">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Yeezy Boost 350" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Yeezy</div>
+                        <div class="sneaker-name">Boost 350 V2</div>
+                        <div class="sneaker-price">$220</div>
+                    </div>
+                </div>
+
+                <!-- Jordan 11 -->
+                <div class="gallery-item sneaker-card" data-category="jordan limited">
+                    <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Air Jordan 11" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Air Jordan</div>
+                        <div class="sneaker-name">Air Jordan 11 Retro</div>
+                        <div class="sneaker-price">$220</div>
+                    </div>
+                </div>
+
+                <!-- Nike Air Max -->
+                <div class="gallery-item sneaker-card" data-category="nike">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Nike Air Max 90" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Nike</div>
+                        <div class="sneaker-name">Air Max 90</div>
+                        <div class="sneaker-price">$90</div>
+                    </div>
+                </div>
+
+                <!-- Adidas Stan Smith -->
+                <div class="gallery-item sneaker-card" data-category="adidas">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Adidas Stan Smith" class="sneaker-image">
+                    <div class="sneaker-info">
+                        <div class="sneaker-brand">Adidas</div>
+                        <div class="sneaker-name">Stan Smith</div>
+                        <div class="sneaker-price">$80</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeInUp 0.6s ease-out';
+                        } else {
+                            const categories = item.getAttribute('data-category').split(' ');
+                            if (categories.includes(filter)) {
+                                item.style.display = 'block';
+                                item.style.animation = 'fadeInUp 0.6s ease-out';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Add hover effects to sneaker cards
+            const sneakerCards = document.querySelectorAll('.sneaker-card');
+            sneakerCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+
+  
+
+
+  <style>
+        :root {
+            --primary-black: #0a0a0a;
+            --charcoal: #1a1a1a;
+            --deep-black: #000000;
+            --text-primary: #ffffff;
+            --text-muted: #b8b8b8;
+            --text-secondary: #888888;
+            --accent-gold: #d4af37;
+            --accent-warm: #e8b547;
+            --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--primary-black);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 100px 0 0 0;
+        }
+
+        #footer {
+            background: var(--charcoal);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 5rem;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-logo:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .widget-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .item-anchor {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .item-anchor:hover {
+            color: var(--text-primary);
+        }
+
+        .social-links ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-link {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--accent-gold);
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-warm);
+        }
+
+        .footer-bottom {
+            background: var(--deep-black);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 0;
+        }
+
+        .shipping, .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .shipping span, .payment-option span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .payment-logo, .shipping-logo {
+            height: 20px;
+            width: auto;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .payment-logo:hover, .shipping-logo:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .copyright a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        /* Demo content */
+        .demo-content {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-black);
+        }
+
+        .demo-text {
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .footer-logo {
+                font-size: 1.5rem;
+            }
+            
+            .shipping, .payment-option {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Demo Content -->
+    <div class="demo-content">
+        <div class="demo-text">
+            <h3>The Journey Footlocker</h3>
+            <p>Scroll down to see the footer</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row py-5">
+                
+                <!-- Brand Info -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-intro mb-4">
+                        <a href="index.html" class="footer-logo">The Journey Footlocker</a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted destination for premium sneakers and athletic footwear. Every step of your journey starts here.
+                    </p>
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Quick Links</h5>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html" class="item-anchor">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Shop</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">New Arrivals</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Info -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Help & Info</h5>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Place Your Order</a>
+                        </li>
+                       
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Shipping + Delivery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Size Guide</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p>Do you have any questions or suggestions? 
+                            <a href="mailto:thejourneyfootlocker@gmail.com">thejourneyfootlocker@gmail.com</a>
+                        </p>
+                        <p>Do you need support? Give us a call. 
+                            <a href="tel:+1-800-JOURNEY">+233 509 914 728 </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-wrap">
+                        <div class="shipping">
+                            <span>We ship with:</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">FedEx</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">UPS</span>
+                        </div>
+                        <div class="payment-option">
+                            <span>Payment options:</span>
+                            <i class="fab fa-cc-visa" style="color: var(--text-primary); font-size: 1.2rem;"></i>
+                            <i class="fab fa-cc-paypal" style="color: var(--text-primary); font-size: 1.2rem;"></i>
+                            <i class="fab fa-cc-mastercard" style="color: var(--text-primary); font-size: 1.2rem;"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p class="copyright">
+                            © 2024 The Journey Footlocker. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
