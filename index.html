@@ -545,248 +545,6 @@
 
 
 <body>
-  <!-- Demo Content -->
-  <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
-    <div class="container">
-      <a class="navbar-brand navbar-brand-modern" href="#">The Journey</a>
-      <div class="nav-actions d-flex align-items-center">
-        <i class="fas fa-search me-3"></i>
-        <i class="fas fa-heart me-3"></i>
-        <i class="fas fa-shopping-bag"></i>
-      </div>
-    </div>
-  </nav>  <section class="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="hero-title mb-4">Premium Sneaker Gallery</h1>
-          <p class="hero-subtitle">Discover the finest collection of limited edition and exclusive footwear</p>
-          <a href="#" class="discover-btn mt-4">Explore Collection</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="features-modern">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-gem"></i>
-            </div>
-            <h3 class="feature-title">Premium Quality</h3>
-            <p class="feature-description">Handcrafted excellence in every pair, sourced from the finest materials and authenticated for guaranteed quality.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-shipping-fast"></i>
-            </div>
-            <h3 class="feature-title">Express Delivery</h3>
-            <p class="feature-description">White-glove delivery service ensuring your premium sneakers arrive in pristine condition within 24 hours.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3 class="feature-title">Authenticity Guaranteed</h3>
-            <p class="feature-description">Every sneaker is verified by our expert authentication team, ensuring you receive only genuine premium footwear.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  
-  <!-- Demo Animation Script -->
-  <script>
-    // Add smooth animations on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, observerOptions);
-
-    // Observe all feature cards
-    document.querySelectorAll('.feature-card').forEach(card => {
-      card.classList.add('fade-in-up');
-      observer.observe(card);
-    });
-
-    // Add shimmer effect to brand name periodically
-    setInterval(() => {
-      const brand = document.querySelector('.navbar-brand-modern');
-      brand.classList.add('shimmer');
-      setTimeout(() => brand.classList.remove('shimmer'), 2000);
-    }, 10000);
-  </script>
-</body>
-
-<body class="sneaker-gallery">
-
-  <!-- Refined Search Popup -->
-  <div class="search-popup position-fixed w-100 h-100 d-none align-items-center justify-content-center" 
-       style="background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); z-index: 9998; top: 0; left: 0;">
-    <div class="search-popup-container container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="p-4 p-md-5 rounded-3" style="background: rgba(26, 26, 26, 0.9); border: var(--border-accent);">
-            
-            <!-- Close Button -->
-            <button type="button" class="btn-close float-end mb-3" aria-label="Close search"></button>
-            
-            <!-- Search Form -->
-            <form role="search" method="get" class="mb-4" action="">
-              <div class="position-relative">
-                <input type="search" id="search-form" class="form-control search-input border-0 fs-5 py-3"
-                  placeholder="Search premium sneakers..." value="" name="s" />
-                <button type="submit" class="search-submit position-absolute border-0 bg-transparent"
-                  style="top: 50%; right: 15px; transform: translateY(-50%);">
-                  <i class="fas fa-search" style="color: var(--accent-gold);"></i>
-                </button>
-              </div>
-            </form>
-
-            <!-- Categories -->
-            <div>
-              <h6 class="cat-list-title mb-3 text-uppercase fw-semibold" 
-                  style="color: var(--accent-gold); letter-spacing: 1px;">Browse Categories</h6>
-              
-              <div class="row g-2">
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Jordan">Air Jordan</a>
-                </div>
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Nike">Nike</a>
-                </div>
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Adidas">Adidas</a>
-                </div>
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Yeezy">Yeezy</a>
-                </div>
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Limited Edition">Limited Edition</a>
-                </div>
-                <div class="col-6 col-md-4">
-                  <a href="#" class="cat-list-item d-block p-2 rounded text-center text-decoration-none" 
-                     style="background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.2);"
-                     title="Lifestyle">Lifestyle</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Refined Cart Offcanvas -->
-  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" 
-       aria-labelledby="CartTitle" style="width: 350px;">
-    <div class="offcanvas-header border-bottom" style="border-color: var(--border-subtle) !important;">
-      <h5 class="offcanvas-title text-uppercase fw-semibold d-flex align-items-center" id="CartTitle">
-        <i class="fas fa-shopping-bag me-2" style="color: var(--accent-gold);"></i>
-        <span style="color: var(--text-primary);">Your Selection</span>
-      </h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    
-    <div class="offcanvas-body p-3">
-      <!-- Cart Header -->
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <span class="fw-medium" style="color: var(--text-primary);">Items</span>
-        <span class="badge rounded-pill" style="background: var(--accent-gold); color: var(--deep-black);">3</span>
-      </div>
-      
-      <!-- Cart Items -->
-      <div class="cart-items mb-4">
-        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
-          <div class="flex-grow-1">
-            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Air Jordan 1 Retro High</h6>
-            <small class="text-muted">Size 10.5 • Chicago Colorway</small>
-          </div>
-          <div class="text-end ms-3">
-            <div class="fw-medium" style="color: var(--accent-gold);">$170</div>
-            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        
-        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
-          <div class="flex-grow-1">
-            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Nike Dunk Low</h6>
-            <small class="text-muted">Size 9 • Panda Colorway</small>
-          </div>
-          <div class="text-end ms-3">
-            <div class="fw-medium" style="color: var(--accent-gold);">$110</div>
-            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        
-        <div class="list-group-item d-flex justify-content-between align-items-start mb-3 p-3">
-          <div class="flex-grow-1">
-            <h6 class="mb-1 fw-medium" style="color: var(--text-primary);">Adidas Yeezy 350 V2</h6>
-            <small class="text-muted">Size 11 • Zebra</small>
-          </div>
-          <div class="text-end ms-3">
-            <div class="fw-medium" style="color: var(--accent-gold);">$220</div>
-            <button class="btn btn-sm p-0 mt-1" style="color: var(--text-muted);">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Cart Total -->
-      <div class="border-top pt-3 mb-4" style="border-color: var(--border-subtle) !important;">
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="fw-semibold fs-5" style="color: var(--text-primary);">Total</span>
-          <span class="fw-bold fs-4" style="color: var(--accent-gold);">$500</span>
-        </div>
-      </div>
-      
-      <!-- Action Buttons -->
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary btn-lg fw-semibold text-uppercase" style="letter-spacing: 1px;">
-          <i class="fas fa-credit-card me-2"></i>Secure Checkout
-        </button>
-        <button class="btn btn-outline-light fw-medium text-uppercase" style="letter-spacing: 1px;">
-          <i class="fas fa-shopping-cart me-2"></i>View Full Cart
-        </button>
-      </div>
-    </div>
-  </div>
 
   <!-- Premium Navigation - Mobile First -->
   <nav class="navbar navbar-expand-lg fixed-top modern-navbar py-2 py-lg-3">
@@ -1228,7 +986,7 @@
                 <button class="filter-btn" data-filter="jordan">Jordan</button>
                 <button class="filter-btn" data-filter="nike">Nike</button>
                 <button class="filter-btn" data-filter="adidas">Adidas</button>
-                <button class="filter-btn" data-filter="limited">Limited Edition</button>
+                <button class="filter-btn" data-filter="limited">Other Brands</button>
             </div>
             
             <!-- Gallery Grid -->
@@ -1241,7 +999,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Air Jordan</div>
                         <div class="sneaker-name">Air Jordan 1 Retro High</div>
-                        <div class="sneaker-price">$170</div>
+                        <div class="sneaker-price">GH₵400</div>
                     </div>
                 </div>
 
@@ -1252,7 +1010,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Nike</div>
                         <div class="sneaker-name">Air Force 1 '07</div>
-                        <div class="sneaker-price">$90</div>
+                        <div class="sneaker-price">GH₵350</div>
                     </div>
                 </div>
 
@@ -1263,7 +1021,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Adidas</div>
                         <div class="sneaker-name">Ultraboost 22</div>
-                        <div class="sneaker-price">$180</div>
+                        <div class="sneaker-price">GH₵480</div>
                     </div>
                 </div>
 
@@ -1274,7 +1032,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Air Jordan</div>
                         <div class="sneaker-name">Air Jordan 4 Retro</div>
-                        <div class="sneaker-price">$200</div>
+                        <div class="sneaker-price">GH₵400</div>
                     </div>
                 </div>
 
@@ -1285,7 +1043,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Nike</div>
                         <div class="sneaker-name">Dunk Low Retro</div>
-                        <div class="sneaker-price">$100</div>
+                        <div class="sneaker-price">GH₵400</div>
                     </div>
                 </div>
 
@@ -1296,7 +1054,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Yeezy</div>
                         <div class="sneaker-name">Boost 350 V2</div>
-                        <div class="sneaker-price">$220</div>
+                        <div class="sneaker-price">GH₵380</div>
                     </div>
                 </div>
 
@@ -1307,7 +1065,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Air Jordan</div>
                         <div class="sneaker-name">Air Jordan 11 Retro</div>
-                        <div class="sneaker-price">$220</div>
+                        <div class="sneaker-price">GH₵420</div>
                     </div>
                 </div>
 
@@ -1318,7 +1076,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Nike</div>
                         <div class="sneaker-name">Air Max 90</div>
-                        <div class="sneaker-price">$90</div>
+                        <div class="sneaker-price">GH₵430</div>
                     </div>
                 </div>
 
@@ -1329,7 +1087,7 @@
                     <div class="sneaker-info">
                         <div class="sneaker-brand">Adidas</div>
                         <div class="sneaker-name">Stan Smith</div>
-                        <div class="sneaker-price">$80</div>
+                        <div class="sneaker-price">GH₵550</div>
                     </div>
                 </div>
 
@@ -1570,10 +1328,6 @@
 <body>
     <!-- Demo Content -->
     <div class="demo-content">
-        <div class="demo-text">
-            <h3>The Journey Footlocker</h3>
-            <p>Scroll down to see the footer</p>
-        </div>
     </div>
 
     <!-- Footer -->
@@ -1679,15 +1433,9 @@
                 <div class="row">
                     <div class="col-md-6 d-flex flex-wrap">
                         <div class="shipping">
-                            <span>We ship with:</span>
-                            <span style="color: var(--text-primary); font-weight: 600;">FedEx</span>
-                            <span style="color: var(--text-primary); font-weight: 600;">UPS</span>
-                        </div>
-                        <div class="payment-option">
-                            <span>Payment options:</span>
-                            <i class="fab fa-cc-visa" style="color: var(--text-primary); font-size: 1.2rem;"></i>
-                            <i class="fab fa-cc-paypal" style="color: var(--text-primary); font-size: 1.2rem;"></i>
-                            <i class="fab fa-cc-mastercard" style="color: var(--text-primary); font-size: 1.2rem;"></i>
+                            <span>We accept payment:</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">MOBILE MONEY</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">BANK TRANSFER</span>
                         </div>
                     </div>
                     <div class="col-md-6 text-end">
