@@ -955,16 +955,46 @@ body {
       
       <!-- Under GH₵300 Section -->
       <!-- Nike Air Force 1 -->
-      <div class="gallery-item sneaker-card" data-price="budget" data-brand="nike">
-        <div class="price-badge">Budget</div>
-        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Nike Air Force 1" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Nike</div>
-          <div class="sneaker-name">Air Force 1 '07</div>
-          <div class="sneaker-price">GH₵280</div>
-        </div>
-      </div>
+<div class="gallery-item sneaker-card" data-price="budget" data-brand="nike">
+  <div class="price-badge">Budget</div>
+  <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+       alt="Nike Air Force 1" class="sneaker-image">
+  <div class="sneaker-info">
+    <div class="sneaker-brand">Nike</div>
+    <div class="sneaker-name">Air Force 1 '07</div>
+    <div class="sneaker-price">GH₵280</div>
+    <button onclick="sendWhatsAppMessage('Nike Air Force 1 \'07', 'GH₵280')" 
+            style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 12px; padding: 10px 16px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);"
+            onmouseover="this.style.background='linear-gradient(135deg, #128C7E 0%, #25D366 100%)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';"
+            onmouseout="this.style.background='linear-gradient(135deg, #25D366 0%, #128C7E 100%)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(37, 211, 102, 0.3)';"
+            onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(37, 211, 102, 0.3)';"
+            onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';">
+      <i class="fab fa-whatsapp" style="font-size: 16px;"></i>
+      <span>WhatsApp</span>
+    </button>
+  </div>
+</div>
+
+<script>
+function sendWhatsAppMessage(sneakerName, price) {
+  // Replace with your actual WhatsApp number (include country code, no + sign)
+  const phoneNumber = "233509914728"
+  
+  const message = encodeURIComponent(
+    `Hi! I'm interested in this sneaker:
+
+*${sneakerName}*
+Price: ${price}
+
+Is it still available? I'd like to know more details.`
+  );
+  
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+  // Open WhatsApp in a new tab/window
+  window.open(whatsappURL, '_blank');
+}
+</script>
 
       <!-- Adidas Stan Smith -->
       <div class="gallery-item sneaker-card" data-price="budget" data-brand="adidas">
