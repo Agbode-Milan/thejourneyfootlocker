@@ -55,6 +55,14 @@
   <!-- Preload critical resources -->
   <link rel="preload" href="css/style.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" as="style">
+
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 
@@ -500,6 +508,419 @@
   }
 </style>
 
+
+<style>
+  /* Navbar CSS Variables */
+:root {
+    --primary-black: #0a0a0a;
+    --deep-black: #000000;
+    --charcoal: #1a1a1a;
+    --text-primary: #f5f5f5;
+    --text-secondary: #d0d0d0;
+    --text-muted: #a0a0a0;
+    --accent-gold: #c9a96e;
+    --accent-warm: #b8a082;
+    --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+    --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Body padding for fixed navbar */
+body {
+    padding-top: 70px;
+}
+
+/* Navbar Base */
+.modern-navbar {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: var(--border-subtle);
+    transition: all 0.3s ease;
+    min-height: 60px;
+}
+
+/* Mobile Brand */
+.navbar-brand-modern {
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    color: var(--accent-gold) !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+}
+
+.navbar-brand-modern:hover {
+    color: var(--accent-warm) !important;
+}
+
+/* Mobile Action Icons */
+.mobile-action {
+    color: var(--text-secondary) !important;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.mobile-action:hover {
+    color: var(--accent-gold) !important;
+}
+
+.mobile-menu-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.mobile-menu-btn:hover {
+    color: var(--accent-gold);
+}
+
+/* Badge Styling */
+.action-badge {
+    background: var(--accent-gold) !important;
+    color: var(--deep-black) !important;
+    font-size: 0.65rem;
+    font-weight: 700;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Desktop Navigation - Hidden by default, shown on lg+ */
+.desktop-nav {
+    display: none;
+}
+
+.nav-link-custom {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    position: relative;
+}
+
+.nav-link-custom:hover {
+    color: var(--accent-gold) !important;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gold);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link-custom:hover::after {
+    width: 70%;
+}
+
+/* Desktop Actions */
+.desktop-action {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.desktop-action:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* Offcanvas Mobile Menu */
+.offcanvas-custom {
+    background: var(--charcoal) !important;
+    border-left: var(--border-subtle) !important;
+    width: 280px !important;
+}
+
+.offcanvas-header-custom {
+    background: rgba(201, 169, 110, 0.1);
+    border-bottom: var(--border-subtle) !important;
+}
+
+.offcanvas-title-custom {
+    color: var(--accent-gold) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-close-custom {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.btn-close-custom:hover {
+    opacity: 1;
+}
+
+/* Mobile Nav Sections */
+.nav-section-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.nav-section-btn:hover {
+    background: rgba(201, 169, 110, 0.05) !important;
+}
+
+.nav-section-btn i {
+    color: var(--text-muted);
+    transition: transform 0.3s ease;
+}
+
+.nav-section-btn[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.nav-sublink {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    display: block;
+}
+
+.nav-sublink:hover {
+    color: var(--accent-gold) !important;
+    padding-left: 2.5rem;
+}
+
+.nav-direct-link {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    display: block;
+}
+
+.nav-direct-link:hover {
+    color: var(--accent-gold) !important;
+    background: rgba(201, 169, 110, 0.05);
+}
+
+/* Dropdown Menus */
+.dropdown-menu-custom {
+    background: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(15px);
+    border: var(--border-subtle) !important;
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+}
+
+.dropdown-item-custom {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item-custom:hover {
+    background: rgba(201, 169, 110, 0.1) !important;
+    color: var(--accent-gold) !important;
+}
+
+/* Desktop Display */
+@media (min-width: 992px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .modern-navbar {
+        min-height: 70px;
+    }
+
+    .navbar-brand-modern {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .desktop-nav {
+        display: flex !important;
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 576px) {
+    .offcanvas-custom {
+        width: 85vw !important;
+    }
+
+    .navbar-brand-modern {
+        font-size: 1rem;
+    }
+}
+  </style>
+
+
+<!-- Mobile-First Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top modern-navbar">
+    <div class="container-fluid px-3">
+        
+        <!-- Mobile Layout (Default) -->
+        <div class="d-flex d-lg-none w-100 justify-content-between align-items-center">
+            <!-- Mobile Brand -->
+            <a class="navbar-brand-modern" href="index.html">TJF</a>
+            
+            <!-- Mobile Actions -->
+            <div class="d-flex align-items-center gap-3">
+
+
+                <button class="mobile-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Desktop Layout (lg+) -->
+        <div class="desktop-nav w-100 justify-content-between align-items-center">
+            <!-- Desktop Brand -->
+            <a class="navbar-brand-modern" href="index.html">TheJourneyFootlocker</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="d-flex gap-4">
+                <div class="dropdown">
+                    <a class="nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                        <li><a class="dropdown-item dropdown-item-custom" href="#featured">Featured</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#new">New Arrivals</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#limited">Limited Edition</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#rare">Rare Finds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                        <li><a class="dropdown-item dropdown-item-custom" href="#nike">Nike</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#jordan">Jordan</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#adidas">Adidas</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#newbalance">New Balance</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#converse">Converse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown">
+                    <a class="nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                        <li><a class="dropdown-item dropdown-item-custom" href="#basketball">Basketball</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#lifestyle">Lifestyle</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#running">Running</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#retro">Retro Classics</a></li>
+                    </ul>
+                </div>
+                
+                <a class="nav-link-custom" href="#collections">Collections</a>
+                <a class="nav-link-custom" href="#contact">Contact</a>
+            </div>
+            
+            <!-- Desktop Actions -->
+            <div class="d-flex align-items-center gap-3">
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header offcanvas-header-custom">
+        <h5 class="offcanvas-title offcanvas-title-custom" id="mobileMenuLabel">
+            <i class="fas fa-bars me-2"></i>Menu
+        </h5>
+        <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <!-- Gallery Section -->
+        <div class="border-bottom" style="border-color: var(--border-subtle) !important;">
+            <button class="nav-section-btn d-flex justify-content-between align-items-center" 
+                    data-bs-toggle="collapse" data-bs-target="#galleryMenu" aria-expanded="false" aria-controls="galleryMenu">
+                <span>Gallery</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="galleryMenu">
+                <a href="#featured" class="nav-sublink">Featured</a>
+                <a href="#new" class="nav-sublink">New Arrivals</a>
+                <a href="#limited" class="nav-sublink">Limited Edition</a>
+                <a href="#rare" class="nav-sublink">Rare Finds</a>
+            </div>
+        </div>
+        
+        <!-- Brands Section -->
+        <div class="border-bottom" style="border-color: var(--border-subtle) !important;">
+            <button class="nav-section-btn d-flex justify-content-between align-items-center" 
+                    data-bs-toggle="collapse" data-bs-target="#brandsMenu" aria-expanded="false" aria-controls="brandsMenu">
+                <span>Brands</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="brandsMenu">
+                <a href="#nike" class="nav-sublink">Nike</a>
+                <a href="#jordan" class="nav-sublink">Jordan</a>
+                <a href="#adidas" class="nav-sublink">Adidas</a>
+                <a href="#newbalance" class="nav-sublink">New Balance</a>
+                <a href="#converse" class="nav-sublink">Converse</a>
+            </div>
+        </div>
+        
+        <!-- Categories Section -->
+        <div class="border-bottom" style="border-color: var(--border-subtle) !important;">
+            <button class="nav-section-btn d-flex justify-content-between align-items-center" 
+                    data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
+                <span>Categories</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="categoriesMenu">
+                <a href="#basketball" class="nav-sublink">Basketball</a>
+                <a href="#running" class="nav-sublink">Running</a>
+                <a href="#retro" class="nav-sublink">Retro Classics</a>
+            </div>
+        </div>
+        
+        <!-- Direct Links -->
+        <a href="#collections" class="nav-direct-link border-bottom" style="border-color: var(--border-subtle) !important;">Collections</a>
+        <a href="#contact" class="nav-direct-link">Contact</a>
+    </div>
+</div>
+
+
+
+
 <!-- Premium Sneaker Gallery with Price Categories -->
 <section class="gallery-section">
   <div class="container">
@@ -727,6 +1148,16 @@
   </div>
 </section>
 
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom navbar JS -->
+<script src="path-to-your-navbar.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- Enhanced JavaScript for Gallery Functionality -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -894,3 +1325,77 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 </script>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Bootstrap components
+    if (typeof bootstrap !== 'undefined') {
+        // Dropdowns
+        document.querySelectorAll('.dropdown-toggle').forEach(el => {
+            new bootstrap.Dropdown(el);
+        });
+        // Offcanvas
+        document.querySelectorAll('.offcanvas').forEach(el => {
+            new bootstrap.Offcanvas(el);
+        });
+    }
+
+    const collapseButtons = document.querySelectorAll('.nav-section-btn');
+    const mobileMenu = document.querySelector('#mobileMenu');
+
+    // Toggle sections
+    collapseButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('data-bs-target');
+            const targetElement = document.querySelector(targetId);
+            const chevron = this.querySelector('.fas.fa-chevron-down');
+
+            if (!targetElement) return;
+
+            // If section is open → close it
+            if (targetElement.classList.contains('show')) {
+                bootstrap.Collapse.getInstance(targetElement)?.hide();
+                chevron.style.transform = 'rotate(0deg)';
+            } else {
+                // Close all other open sections
+                document.querySelectorAll('.collapse.show').forEach(section => {
+                    bootstrap.Collapse.getInstance(section)?.hide();
+                    const otherBtn = document.querySelector(`[data-bs-target="#${section.id}"]`);
+                    if (otherBtn) {
+                        const otherChevron = otherBtn.querySelector('.fas.fa-chevron-down');
+                        if (otherChevron) otherChevron.style.transform = 'rotate(0deg)';
+                    }
+                });
+                // Open this section
+                new bootstrap.Collapse(targetElement, { toggle: true });
+                chevron.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (e) {
+        if (mobileMenu && mobileMenu.classList.contains('show')) {
+            if (!mobileMenu.contains(e.target) && !e.target.closest('[data-bs-toggle="offcanvas"]')) {
+                bootstrap.Offcanvas.getInstance(mobileMenu)?.hide();
+                closeMobileMenuSections();
+            }
+        }
+    });
+
+    // Close all dropdowns and sections
+    function closeMobileMenuSections() {
+        document.querySelectorAll('.collapse.show').forEach(section => {
+            bootstrap.Collapse.getInstance(section)?.hide();
+            const btn = document.querySelector(`[data-bs-target="#${section.id}"]`);
+            if (btn) {
+                const chevron = btn.querySelector('.fas.fa-chevron-down');
+                if (chevron) chevron.style.transform = 'rotate(0deg)';
+            }
+        });
+    }
+});
+
+  </script>
+</html>
