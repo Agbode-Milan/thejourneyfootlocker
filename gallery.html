@@ -1411,4 +1411,309 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   </script>
+
+    <style>
+        :root {
+            --primary-black: #0a0a0a;
+            --charcoal: #1a1a1a;
+            --deep-black: #000000;
+            --text-primary: #ffffff;
+            --text-muted: #b8b8b8;
+            --text-secondary: #888888;
+            --accent-gold: #d4af37;
+            --accent-warm: #e8b547;
+            --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--primary-black);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 100px 0 0 0;
+        }
+
+        #footer {
+            background: var(--charcoal);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 5rem;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-logo:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .widget-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .item-anchor {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .item-anchor:hover {
+            color: var(--text-primary);
+        }
+
+        .social-links ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-link {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--accent-gold);
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-warm);
+        }
+
+        .footer-bottom {
+            background: var(--deep-black);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 0;
+        }
+
+        .shipping, .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .shipping span, .payment-option span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .payment-logo, .shipping-logo {
+            height: 20px;
+            width: auto;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .payment-logo:hover, .shipping-logo:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .copyright a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        /* Demo content */
+        .demo-content {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-black);
+        }
+
+        .demo-text {
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .footer-logo {
+                font-size: 1.5rem;
+            }
+            
+            .shipping, .payment-option {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row py-5">
+                
+                <!-- Brand Info -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="footer-intro mb-4">
+                        <a href="index.html" class="footer-logo">The Journey Footlocker</a>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted destination for premium sneakers and athletic footwear. Every step of your journey starts here.
+                    </p>
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Quick Links</h5>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html" class="item-anchor">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="gallery.html" class="item-anchor">Shop</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">New Arrivals</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help & Info -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Help & Info</h5>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Place Your Order</a>
+                        </li>
+                       
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Shipping + Delivery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">Size Guide</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="item-anchor">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="widget-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p>Do you have any questions or suggestions? 
+                            <a href="mailto:thejourneyfootlocker@gmail.com">thejourneyfootlocker@gmail.com</a>
+                        </p>
+                        <p>Do you need support? Give us a call. 
+                            <a href="tel:+1-800-JOURNEY">+233 509 914 728 </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-wrap">
+                        <div class="shipping">
+                            <span>We accept payment:</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">MOBILE MONEY</span>
+                            <span style="color: var(--text-primary); font-weight: 600;">BANK TRANSFER</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <p class="copyright">
+                            © 2025 The Journey Footlocker. All rights reserved.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
+
