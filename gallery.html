@@ -787,6 +787,8 @@ body {
 }
   </style>
 
+  
+
 
 <!-- Mobile-First Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
@@ -950,223 +952,204 @@ body {
       <button class="brand-filter-btn" data-brand="other">Other</button>
     </div>
     
-    <!-- Gallery Grid -->
-    <div class="gallery-grid">
-      
-      <!-- Under GH₵300 Section -->
-      <!-- Nike Air Force 1 -->
-<div class="gallery-item sneaker-card" data-price="budget" data-brand="nike">
-  <div class="price-badge">Budget</div>
-  <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-       alt="Nike Air Force 1" class="sneaker-image">
-  <div class="sneaker-info">
-    <div class="sneaker-brand">Nike</div>
-    <div class="sneaker-name">Air Force 1 '07</div>
-    <div class="sneaker-price">GH₵280</div>
-    <button onclick="sendWhatsAppMessage('Nike Air Force 1 \'07', 'GH₵280')" 
-            style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 12px; padding: 10px 16px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);"
-            onmouseover="this.style.background='linear-gradient(135deg, #128C7E 0%, #25D366 100%)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';"
-            onmouseout="this.style.background='linear-gradient(135deg, #25D366 0%, #128C7E 100%)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(37, 211, 102, 0.3)';"
-            onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(37, 211, 102, 0.3)';"
-            onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';">
-      <i class="fab fa-whatsapp" style="font-size: 16px;"></i>
-      <span>WhatsApp</span>
-    </button>
+<!-- Gallery Grid -->
+<div class="gallery-grid">
+
+  <!-- Sneaker 1 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
+    <div class="price-badge">Available</div>
+    <img src="images\airforce 1s-white.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Nike</div>
+      <div class="sneaker-name">GH₵320</div>
+      <div class="sneaker-price">Size 36–46</div>
+      <button onclick="sendWhatsAppMessage('GH₵320', 'Size 36–46')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
   </div>
-</div>
 
-<script>
-function sendWhatsAppMessage(sneakerName, price) {
-  // Replace with your actual WhatsApp number (include country code, no + sign)
-  const phoneNumber = "233509914728"
-  
-  const message = encodeURIComponent(
-    `Hi! I'm interested in this sneaker:
+    <!-- Sneaker 2 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
+    <div class="price-badge">Available</div>
+    <img src="images\black-airforce.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Nike</div>
+      <div class="sneaker-name">GH₵320</div>
+      <div class="sneaker-price">Size 36–46</div>
+      <button onclick="sendWhatsAppMessage('GH₵320', 'Size 36–46')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-*${sneakerName}*
-Price: ${price}
 
-Is it still available? I'd like to know more details.`
-  );
-  
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-  
-  // Open WhatsApp in a new tab/window
-  window.open(whatsappURL, '_blank');
-}
-</script>
+  <!-- Sneaker 3 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="adidas">
+    <div class="price-badge">Available</div>
+    <img src="images\adidas-campus.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Adidas</div>
+      <div class="sneaker-name">GH₵420</div>
+      <div class="sneaker-price">Size 40–44</div>
+      <button onclick="sendWhatsAppMessage('GH₵420', 'Size 40–44')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Adidas Stan Smith -->
-      <div class="gallery-item sneaker-card" data-price="budget" data-brand="adidas">
-        <div class="price-badge">Budget</div>
-        <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Adidas Stan Smith" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Adidas</div>
-          <div class="sneaker-name">Stan Smith Classic</div>
-          <div class="sneaker-price">GH₵250</div>
-        </div>
-      </div>
 
-      <!-- Converse Chuck Taylor -->
-      <div class="gallery-item sneaker-card" data-price="budget" data-brand="other">
-        <div class="price-badge">Budget</div>
-        <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Converse Chuck Taylor" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Converse</div>
-          <div class="sneaker-name">Chuck Taylor All Star</div>
-          <div class="sneaker-price">GH₵220</div>
-        </div>
-      </div>
+       <!-- Sneaker 4 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="jordan">
+    <div class="price-badge">Available</div>
+    <img src="images\jordan 4's black cat.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Jordan</div>
+      <div class="sneaker-name">GH₵380</div>
+      <div class="sneaker-price">Size 40–45</div>
+      <button onclick="sendWhatsAppMessage('GH₵380', 'Size 40-45')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- GH₵300 - GH₵500 Section -->
-      <!-- Air Jordan 1 -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="jordan">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Air Jordan 1 Retro High" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Air Jordan</div>
-          <div class="sneaker-name">Air Jordan 1 Retro High</div>
-          <div class="sneaker-price">GH₺400</div>
-        </div>
-      </div>
+        <!-- Sneaker 5 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
+    <div class="price-badge">Available</div>
+    <img src="images\panda-dunks.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Nike</div>
+      <div class="sneaker-name">GH₵350</div>
+      <div class="sneaker-price">Size 38–45</div>
+      <button onclick="sendWhatsAppMessage('GH₵350', 'Size 38-45')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Nike Dunk Low -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Nike Dunk Low" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Nike</div>
-          <div class="sneaker-name">Dunk Low Retro</div>
-          <div class="sneaker-price">GH₵350</div>
-        </div>
-      </div>
 
-      <!-- Nike Air Max 90 -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Nike Air Max 90" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Nike</div>
-          <div class="sneaker-name">Air Max 90 Essential</div>
-          <div class="sneaker-price">GH₵380</div>
-        </div>
-      </div>
+         <!-- Sneaker 6 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="jordan">
+    <div class="price-badge">Available</div>
+    <img src="images\jordan 4.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Jordan</div>
+      <div class="sneaker-name">GH₵380</div>
+      <div class="sneaker-price">Size 40–45</div>
+      <button onclick="sendWhatsAppMessage('GH₵380', 'Size 40-45')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Jordan 4 -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="jordan">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Air Jordan 4" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Air Jordan</div>
-          <div class="sneaker-name">Air Jordan 4 Retro</div>
-          <div class="sneaker-price">GH₵420</div>
-        </div>
-      </div>
+<!-- Sneaker 7 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
+    <div class="price-badge">Available</div>
+    <img src="images\white-and-ask-dunks.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Nike</div>
+      <div class="sneaker-name">GH₵380</div>
+      <div class="sneaker-price">Size 40–44</div>
+      <button onclick="sendWhatsAppMessage('GH₵320', 'Size 36–46')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Yeezy Boost -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="adidas">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Yeezy Boost 350" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Yeezy</div>
-          <div class="sneaker-name">Boost 350 V2</div>
-          <div class="sneaker-price">GH₵450</div>
-        </div>
-      </div>
+        <!-- Sneaker 8 -->
+  <div class="gallery-item sneaker-card" data-price="mid" data-brand="nike">
+    <div class="price-badge">Available</div>
+    <img src="images\white-and-blue-dunks.jpg" 
+         alt="Air Force 1 White" class="sneaker-image">
+    <div class="sneaker-info">
+      <div class="sneaker-brand">Nike</div>
+      <div class="sneaker-name">GH₵350</div>
+      <div class="sneaker-price">Size 40–45</div>
+      <button onclick="sendWhatsAppMessage('GH₵320', 'Size 40–45')" 
+              style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:10px 16px;background:linear-gradient(135deg,#25D366 0%,#128C7E 100%);color:white;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 8px rgba(37,211,102,0.3);"
+              onmouseover="this.style.background='linear-gradient(135deg,#128C7E 0%,#25D366 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';"
+              onmouseout="this.style.background='linear-gradient(135deg,#25D366 0%,#128C7E 100%)';this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(37,211,102,0.3)';"
+              onmousedown="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 4px rgba(37,211,102,0.3)';"
+              onmouseup="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(37,211,102,0.4)';">
+        <i class="fab fa-whatsapp" style="font-size:16px;"></i>
+        <span>WhatsApp</span>
+      </button>
+    </div>
+  </div>
 
-      <!-- Adidas Ultraboost -->
-      <div class="gallery-item sneaker-card" data-price="mid" data-brand="adidas">
-        <div class="price-badge">Mid-Range</div>
-        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Adidas Ultraboost" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Adidas</div>
-          <div class="sneaker-name">Ultraboost 22</div>
-          <div class="sneaker-price">GH₵400</div>
-        </div>
-      </div>
-
-      <!-- GH₵500+ Section -->
-      <!-- Jordan 11 -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="jordan">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Air Jordan 11" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Air Jordan</div>
-          <div class="sneaker-name">Air Jordan 11 Retro</div>
-          <div class="sneaker-price">GH₵620</div>
-        </div>
-      </div>
-
-      <!-- Nike Air Jordan 3 -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="jordan">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Air Jordan 3" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Air Jordan</div>
-          <div class="sneaker-name">Air Jordan 3 Retro</div>
-          <div class="sneaker-price">GH₵580</div>
-        </div>
-      </div>
-
-      <!-- Nike Air Mag Back to the Future -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="nike">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Nike Premium High-Top" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Nike</div>
-          <div class="sneaker-name">Air Jordan Legacy 312</div>
-          <div class="sneaker-price">GH₵680</div>
-        </div>
-      </div>
-
-      <!-- Off-White x Nike -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="nike">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Off-White Collaboration" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Nike x Off-White</div>
-          <div class="sneaker-name">Air Max 90 "Desert Ore"</div>
-          <div class="sneaker-price">GH₵750</div>
-        </div>
-      </div>
-
-      <!-- Adidas Yeezy 700 -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="adidas">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="Yeezy 700" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">Yeezy</div>
-          <div class="sneaker-name">Yeezy 700 V3</div>
-          <div class="sneaker-price">GH₵650</div>
-        </div>
-      </div>
-
-      <!-- New Balance 990v5 -->
-      <div class="gallery-item sneaker-card" data-price="premium" data-brand="other">
-        <div class="price-badge">Premium</div>
-        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-             alt="New Balance 990v5" class="sneaker-image">
-        <div class="sneaker-info">
-          <div class="sneaker-brand">New Balance</div>
-          <div class="sneaker-name">990v5 "Grey"</div>
-          <div class="sneaker-price">GH₵720</div>
-        </div>
-      </div>
+        
 
     </div>
+
+    <script>
+    function sendWhatsAppMessage(sneakerName, sizeRange) {
+        // Replace with your actual WhatsApp number (include country code, no + sign)
+        const phoneNumber = "233509914728"
+        
+        const message = encodeURIComponent(
+            `Hi! I'm interested in this sneaker:
+
+*${sneakerName}*
+Available Sizes: ${sizeRange}
+
+Is it still available? I'd like to know more details about pricing and availability.`
+        );
+        
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+        
+        // Open WhatsApp in a new tab/window
+        window.open(whatsappURL, '_blank');
+    }
+    </script>
 
     <!-- No Results Message -->
     <div class="no-results">
