@@ -1511,19 +1511,16 @@ body {
     </div>
   </div>
 
-    <script>
+<script>
     function sendWhatsAppMessage(button) {
         const phoneNumber = "233509914728";
         const card = button.closest(".sneaker-card");
-
-        // Check if card has a catalogue link (via data attribute)
         const catalogueLink = card.getAttribute("data-catalogue");
 
         if (catalogueLink) {
-            // Open catalogue link
-            window.open(catalogueLink, "_blank");
+            // Open directly in same tab (no popup prompt)
+            window.location.href = catalogueLink;
         } else {
-            // Fall back to custom message
             const brand = card.querySelector(".sneaker-brand").innerText;
             const price = card.querySelector(".sneaker-name").innerText;
             const size = card.querySelector(".sneaker-price").innerText;
@@ -1536,7 +1533,7 @@ body {
             );
 
             const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-            window.open(whatsappURL, "_blank");
+            window.location.href = whatsappURL;
         }
     }
 </script>
